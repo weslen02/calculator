@@ -102,7 +102,8 @@ public class CalculatorScreen {
                             try {
                                 throw new Exception();
                             } catch (Exception ex) {
-                                JOptionPane.showMessageDialog(new JFrame(), "Não pode dividir por zero");
+                                JOptionPane.showMessageDialog(new JFrame(), "Não pode dividir por zero",
+                                "Erro", JOptionPane.WARNING_MESSAGE);
                             }
                         } else {
                             txtAreaResult.setText(Double.toString(calc.getResult()));
